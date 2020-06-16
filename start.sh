@@ -2,7 +2,7 @@
 
 cd $GITHUB_WORKSPACE
 
-if [[ -v WORKING_DIRECTORY ]]; then
+if [ -v WORKING_DIRECTORY ]; then
   cd $WORKING_DIRECTORY
 fi
 
