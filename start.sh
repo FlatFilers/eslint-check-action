@@ -2,11 +2,9 @@
 
 cd $GITHUB_WORKSPACE
 
-if [[ ! -z "${WORKING_DIRECTORY}" ]]; then
+if [[ -v WORKING_DIRECTORY ]]; then
   cd $WORKING_DIRECTORY
 fi
-
-
 
 if [ ! -d "node_modules" ]; then
     echo "Repo dependencies not installed. Installing..."
