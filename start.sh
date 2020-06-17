@@ -1,6 +1,9 @@
 #!/bin/sh
 
-cd $GITHUB_WORKSPACE/$WORKING_DIRECTORY
+env
+
+cd $GITHUB_WORKSPACE
+cd $WORKING_DIRECTORY
 
 if [ ! -d "node_modules" ]; then
     echo "Repo dependencies not installed. Installing..."
